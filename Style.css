@@ -49,7 +49,26 @@ body{
     overflow: hidden;
 }
 
+.gray_back{
+    background-image: url(Images/CatBackRound_Gray.jpg);
+    background-size: 60%;
+}
+
 /* =============== Layout =============== */
+
+*{ 
+    cursor:   url('Images/Cusror_Paw.svg'), pointer;
+}
+
+a{
+    cursor: url('Images/Cursor_Point.svg'), auto;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 90px;
+}
 
 img{
 width: 500px;
@@ -62,6 +81,7 @@ margin: auto;
     margin-right: auto;
     margin: auto;
     width: 62.5rem;
+    padding-top: 80px;
 }
 
 .top_buffer{
@@ -81,6 +101,15 @@ margin: auto;
 
 
 /* =============== Header/Footer =============== */
+header { 
+    position: fixed;
+    top: 0;
+    left: auto;
+    width: 62.5rem;
+    z-index: 1;
+
+    margin: 0;
+} 
 
 header h1 {
     font-size: 25px;
@@ -93,7 +122,9 @@ header nav{
     float: right;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-right: 10px;
 }
+
 
 .nav_logo{
     width: 60px;
@@ -105,6 +136,7 @@ header nav{
     float: right;
     padding: 15px;
     border-style: solid;
+    border-radius: 25px;
     border-width: 5px;
     border-color: transparent;
 
@@ -121,6 +153,8 @@ header nav{
     border-width: 5px;
     border-color: #C8C8A1;
     color: #5a4200;
+
+    transition-duration: .5s;
 }
 
 
@@ -194,17 +228,23 @@ footer {
     text-align: center;
 
     margin-right: 10px;
-    padding: 20px;
 }
 
 .img_container{
     position: relative;
     width: 300px;
+    height: 300px;
+    overflow: hidden;
 }
 
 .image { 
     display: block;
     width: 100%;
+}
+
+.image_horizontal{
+    transform: translatey(-10%);
+    transform: translatex(-20%);
 }
 
 .img_txt{
@@ -214,9 +254,9 @@ footer {
     width: 100%;
     height: 100%;
 
-    background: #f31c1c60;
+    background: #0e4ba775;
     opacity: 0;
-    transition: .5s ease;
+    transition: 1s ease;
 }
 
 .img_txt:hover {
@@ -226,7 +266,7 @@ footer {
 .img_txt a {
     color: white;
     font-family: "Big Shoulders Text", sans-serif;
-    font-size: 50pt;
+    font-size: 40pt;
     text-align: center;
 
     width: 100%;
@@ -238,6 +278,7 @@ footer {
     justify-content: center;
 }
 
+
 /* =============== Gallery =============== */
 
 #gal_nav { 
@@ -246,35 +287,173 @@ footer {
     column-gap: 20px;
     padding: 25pt;
     padding-right: 50px;
+    padding-bottom: 10px;
+
+    height: 400px;
+    overflow: hidden;
     
 }
 
 #gal_nav_txt{ 
-    background-color:#ECEEC7;
-}
-
-#gal_nav_txt ul{ 
-    list-style: square;
-    list-style-position: outside;
-}
-
-#gal_nav_txt li{ 
-    padding-bottom: 20px;
-    font-family: "Big Shoulders Text", sans-serif;
-    font-size: 25px;
-    color: #0C2A56;
-}
-
-.gal_container{
-    position: relative;
+    background-color:#BADD9F;
     
 }
 
-.gal_image { 
-    display: block;
-    width: 100%;
-    height: 400px;
+#gal_nav_txt ul{ 
+    list-style: none;
+    margin: 10px;
+    padding: 0;
 }
+
+#gal_nav_txt li{ 
+    font-family: "Big Shoulders Text", sans-serif;
+    font-size: 24px;
+
+    float: left;
+    padding: 15px;
+    margin-top:10px;
+}
+
+#gal_nav_txt li:hover {
+    background-color: #ECEEC7;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+#gal_nav_txt a:hover {
+    color: #5a4200;
+}
+
+
+.gal_image {
+    background-image: url(Images/Gallery_CatBackround.jpg);
+    background-size: 50%;
+
+}
+
+#big_gal{ 
+    background-color: #D9D9D9;
+
+    margin: auto;
+    width: 95%;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+#big_gal .img_container{
+    width: 100%;
+    height: 100%;
+}
+
+/* =============== Art Page =============== */
+
+.art_nav a{
+    float: right;
+    padding: 12px;
+
+    font-size: 40px;
+    text-align: center;
+    color: #0C2A56;
+}
+
+.art_nav i{ 
+    color: #7288aa;
+    
+}
+
+.art_nav:hover i{
+    color: #0C2A56;
+    cursor: url('Images/Cursor_Point.svg'), auto;
+}
+
+#art{ 
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 95%;
+
+    padding-bottom: 90px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    align-items: center;
+}
+
+#art div{
+    text-align: left;
+    padding: 20px 0;
+    margin: 10px;
+
+}
+
+#art img{ 
+   background-color: #5D8EBF;
+}
+
+.arrow{ 
+    font-size: 30pt;
+}
+
+.arrow i{ 
+    color: #7288aa;
+    
+}
+
+.arrow:hover i{
+    color: #0C2A56;
+    cursor: url('Images/Cursor_Point.svg'), auto;
+}
+
+#art_txt h2{
+    font-size: 30pt;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+
+#art_txt h3{
+    margin-top: 0;
+    margin-bottom: 0; 
+
+    font-weight: 600;
+}
+
+#art_txt p{
+    margin-top: 15px;
+    margin-bottom: 15px; 
+
+    padding-bottom: 20px;
+
+    font-weight: 550;
+}
+
+.art_button{ 
+    font-family: "Big Shoulders Text", sans-serif;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+
+    background-color: #5D8EBF;
+    border-style:solid ;
+    border-radius: 40px;
+    border-width: 5px;
+    border-color: #5D8EBF;
+
+    padding: 14px 80px;
+    margin: 10%;
+
+    transition: .5s;
+
+}
+
+.art_button:hover {
+    background-color: #BADD9F;
+    border-color: #90b871;
+    color: #1b3a19;
+}
+
 
 /* =============== About =============== */
 
@@ -375,29 +554,58 @@ footer {
 
 .button{ 
     font-family: "Cherry Swash", serif;
-    font-size: 1.67rem;
+    font-size: 27px;
     font-weight: bold;
     color: #ffffff;
     text-align: center;
 
-    padding-top: 0.083rem;
-    padding-bottom: 0.083rem;
-
     background-color: #5D8EBF;
+    border-style: solid;
     border-radius: 30px;
+    border-width: 8px;
+    border-color: #5D8EBF;
 
     padding: 20px 80px;
+
+    transition: .5s;
 
 }
 
 .button:hover {
     background-color: #BADD9F;
-    border-style: solid;
-    border-width: 8px;
     border-color: #90b871;
     color: #1b3a19;
+}
 
-    padding: 12px 72px;
+/* =============== CV =============== */
+
+.CV_title {
+    background-color: #BADD9F;
+    padding: 10pt 20pt;
+    margin-bottom: 20px;
+}
+
+#CV_txt{
+    padding: 0pt 20pt;
+}
+
+#CV_txt h2{
+    padding: 0pt;
+    margin: 0pt;
+
+    text-decoration: underline;
+    font-size: 24pt;
+}
+
+#CV_txt h3{
+    margin: 5pt auto;
+
+    font-weight: 600;
+}
+
+#CV_txt ul{
+    list-style: none;
+
+    font-size: 15pt;
     
-
 }
