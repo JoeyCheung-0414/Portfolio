@@ -173,6 +173,11 @@ footer {
 
 }
 
+.fa-brands:hover{
+    cursor: url('Images/Cursor_Point.svg'), auto;
+    color: #ECEEC7;
+}
+
 /* =============== Splash =============== */
 
 #splash { 
