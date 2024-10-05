@@ -1,0 +1,158 @@
+
+* { 
+    text-align: center;
+
+    font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    color: #523509;
+}
+
+body{ 
+    background-image: url(Images/Pattern.jpg);
+}
+
+nav { 
+    text-align: left;
+}
+
+section { 
+    padding-top: 20px;
+}
+
+h1 { 
+    font-family: 'Segoe Script', 'Segoe Print', 'Comic Sans MS', sans-serif;
+    font-size: 40px;
+    
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+h2 { 
+    text-align: left;
+
+    font-family: 'Segoe Script', 'Segoe Print', 'Comic Sans MS', sans-serif;
+    font-size: 20px;
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+ul { 
+    list-style-image: url(Images/Leaf_2.png);
+}
+
+li { 
+    text-align: left;
+}
+
+em { 
+    color: white;
+}
+
+section a { 
+    font-family: 'Segoe Script', 'Segoe Print', 'Comic Sans MS',sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+
+    background-color: #3b776a;
+    color: white;
+
+    border: 5px solid #153D35;
+    border-radius: 30px;
+
+    margin: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;  
+   
+} 
+
+
+nav a { 
+    font-family:'Copperplate_Gothic', 'Lucida Sans', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+
+    background-color: #3b776a;
+    color: white;
+
+    border:none;
+    border-radius: 30px;
+
+    margin:0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;  
+}
+
+li a { 
+    text-align: left;
+
+    font-family:'Copperplate_Gothic', 'Lucida Sans', sans-serif;
+    font-size: 15px;
+
+    background-color: transparent;
+    color: #337c6e;
+
+    border: none;
+    border-radius: none;
+
+    margin: 5px;
+    padding: 1px;
+   
+
+
+}
+
+footer a { 
+    font-family:'Copperplate_Gothic', 'Lucida Sans', sans-serif ; 
+    font-size: 12px;
+    text-decoration: underline;
+
+    background-color: transparent;  
+    color: white;
+
+    border: none;
+    border-radius: none;
+}
+
+.main-page { 
+    background-image: url(Images/Paper_Texture.jpg);
+    width: 800px;
+
+    border: 20px double #523509;
+    border-radius: 20px;
+    
+    margin: auto;
+    padding: 50px;
+}
+
+
+.image { 
+    width: 600px;
+    
+    border: 5px solid #523509;
+    border-radius: 20px;
+
+}
+
+.Left_Align { 
+    text-align: left;
+}
+
+
+#Copyright { 
+    font-family:'Copperplate_Gothic', 'Lucida Sans', sans-serif ;
+    font-size: 12px;
+
+    color: white ;
+    
+    padding-top: 5px;
+} 
